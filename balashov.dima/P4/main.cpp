@@ -12,7 +12,7 @@ int main()
   }
   try
   {
-    char* sourse = enteringLine(capacity);
+    line = balashov::enteringLine(capacity);
   }
     catch(const std::bad_alloc& e)
   {
@@ -26,7 +26,7 @@ int main()
     std::cerr << "The absence of a line\n";
     return 1;
   }
-  std::cout << removeSpaces(line) << "\n";
+  std::cout << balashov::removeSpaces(line) << "\n";
   free(line);
   return 0;
 }
